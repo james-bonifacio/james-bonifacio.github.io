@@ -22,7 +22,7 @@
                 
                 background-color: white;
                 font-family: 'Lato', sans-serif;;
-                font-size: 25px;
+                font-size: 1.25vw;
                 color: #3F3F3F;
                 padding: 100px 250px;
 
@@ -66,6 +66,11 @@
                 background-image: url(img1.jpg);
                 background-size: cover;
                 background-attachment: fixed;
+                height:100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
 
                 
             }
@@ -102,8 +107,10 @@
             }
 
             .resize {
-                width: 300px;
-                height: 500px;
+                width:100%;
+                height:100%;
+                object-fit: cover;
+                overflow: hidden;
             }
 
             .subtitle {
@@ -226,6 +233,10 @@
                 transform: rotate(60deg);
             }
 
+            .col-sm-4 {
+                max-width: 350px;
+            }
+
             
             
         </style>
@@ -248,9 +259,8 @@
               <ul class="nav  navbar-nav">
                 <li><a href="#aboutsection">About Me</a></li>
                 <li><a href="#projectsection">My Projects</a></li>
-                <li><a href="resume.pdf" target="_blank">Resume</a></li>
                 <li><a href="https://ca.linkedin.com/in/jameslezadabonifacio" target="_blank">Linkedin</a></li>
-                <li><a href="https://github.com/jameslbonifacio" target="_blank">Github</a></li>
+                <li><a href="https://github.com/james-bonifacio" target="_blank">Github</a></li>
                 <li><a href="#contact">Contact</a></li>
                   </ul>
               </div>
@@ -260,8 +270,10 @@
 
         <div>
             <div class="parallax-bg">
-                <h1><b>James Bonifacio</b></h1>
-                <h2>Web and Android Development</h2>
+                <div class="title-page">
+                    <h1><b>James Bonifacio</b></h1>
+                    <h2>Web and Android Development</h2>
+                </div>
             </div>
         </div>
 
@@ -269,29 +281,19 @@
         <a name="aboutsection"></a>
 
         <div class="container-fluid bg-1">
-
             <div class="row">
-
               <div class="col-sm-4">
                 <img src="self1.jpg" class = "resize picture fadeInBlock text-center">
               </div>
 
               <div class="col-sm-8">
-
                 <div class ="text-center subtitle">
                   <h1><b>About Me</b></h1>
-
                   <hr>
-                  
                 </div>
 
-                <p>Hi, my name is James Bonifacio and I am currently studying computer engineering at the University of Waterloo. I am an aspiring web and android developer. Although most of my focus has been on front-end design, I have been building on my skillset everyday and am looking to expand into other areas. Aside from programming, I love basketball, playing the guitar, and film-making. I also enjoy watching the latest movies and tv shows. </p>
-
-                <p></p>
-
-                
+                <p>Hi, my name is James Bonifacio and I am 3rd year computer engineering student at the University of Waterloo. I am an aspiring web and android developer. Although most of my focus has been on front-end design, I have been building on my skillset everyday and am looking to expand into other areas. Aside from programming, I love basketball, playing the guitar, and film-making. I also enjoy watching the latest movies and tv shows. </p>
               </div>
-
             </div>
         </div>
 
@@ -303,14 +305,10 @@
             <div class="row text-center">
 
                 <div class="col-md-12 text-center subtitle">
-                    <h1><b>My Projects</b></h1>
+                    <h1><b>Featured Work</b></h1>
 
                     <b><hr></b>
-
-
                 </div>
-
-                <h3> From websites to mobile apps, side projects are a way for me to express my curious and creative side. Here are a just of few of the things I have worked on, with many more soon to come. Stay tuned! </h3>
 
             </div>
 
@@ -318,7 +316,7 @@
 
                 <div class="col-md-6">
                     <div class = "card">
-                        <img src="musikero.JPG" style="width:100%">
+                        <img src="musikero-java.PNG" style="width:100%">
 
                         <div class = container-fluid>
 
@@ -345,79 +343,54 @@
                     </div>
 
                 </div>
-
             </div>
 
             <div class="row row-card">
 
                 <div class="col-md-6">
                     <div class = "card">
-                        <img src="deltadiet.jpg" style="width:100%">
+                        <img src="ibmexample.png" style="width:100%">
 
                         <div class = container-fluid>
 
-                            <h3><b>Delta Diet</b></h3>
+                            <h3><b>IBM Toolchains</b></h3>
                             <hr>
-                            <h4> A diet and nutrition android app created for the 2017 Delta Hacks 3 Hackathon. Has innovative features such as scores, streaks and achievements used to gamify the app and to incentivise people to continue using it. </h4>
-                            <a href="https://github.com/jameslbonifacio/DeltaHacks3" class="btn btn-info" role="button">GitHub</a>
+                            <h4> Built and designed features for IBM's DevOps toolchains product which allow users to set up tool integrations for development, deployment and operation tasks.</h4>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="col-md-6">
-                    <div class = "card ">
-                        <img src="2048.jpg" style="width:100%">
+                    <div class = "card">
+                        <img src="postmediaexample.PNG" style="width:100%">
 
                         <div class = container-fluid>
 
-                            <h3><b>Gesture Controlled 2048</b></h3>
+                            <h3><b>Postmedia Hub</b></h3>
                             <hr>
-                            <h4> Variant of the popular 2048 using a phone’s motion and position sensors to allow various hand
-                            gestures for user control. Currently being created for Android devices using Java and Android Studio </h4>
-
+                            <h4> Worked on a data visualization dashboard for marketing and advertisement that is used by hundreds of businesses.</h4>
                         </div>
                     </div>
 
                 </div>
-
             </div>
-
-
 
             <div class="row row-card">
 
                 <div class="col-md-6">
                     <div class = "card">
-                        <img src="getout.JPG" style="width:100%">
+                        <img src="rbcexample.PNG" style="width:100%">
 
                         <div class = container-fluid>
 
-                            <h3><b>Get Out and Go Inc.</b></h3>
+                            <h3><b>RBC Oxygen</b></h3>
                             <hr>
-                            <h4> Worked with 50+ people on the 2015 Shad Entrepenurial Business Project Competition. Was personally responsible for marketing and helping design the website. </h4>
-
-                            <a href="http://getoutandgoinc.weebly.com/" class="btn btn-info" role="button">Link</a>
+                            <h4> Developed features for a document aggregating dashboard web app that served over 25,000 internal employees.</h4>
                         </div>
                     </div>
 
                 </div>
-
-                <div class="col-md-6">
-                    <div class = "card ">
-                        <img src="workout.jpg" style="width:100%">
-
-                        <div class = container-fluid>
-
-                            <h3><b>Workout App</b></h3>
-                            <hr>
-                            <h4> Created an android app that guides user through user-selected programs and workouts. Complete with timers, diagrams and other essential information. </h4>
-                           <a href="https://github.com/jameslbonifacio/Workout-App" class="btn btn-info" role="button">GitHub</a>
-                        </div>
-                    </div>
-
-                </div>
-
             </div>
         </div>
 
@@ -434,22 +407,15 @@
                     
                     <div class="contact contact-link"> <i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:jameslezadabonifacio@gmail.com" class = "contact-link">jameslezadabonifacio@gmail.com</a></div>
                 
-                    
-
-                
                     <div class="contact contact-link"> <i class="fa fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/jameslezadabonifacio" class = "contact-link">James Bonifacio</a></div>
 
-                
-                
-
-                
-                    <div class="contact contact-link"> <i class="fa fa-github-square" aria-hidden="true"></i><a href="https://github.com/jameslbonifacio" class = "contact-link">jameslbonifacio</a> </div>
+                    <div class="contact contact-link"> <i class="fa fa-github-square" aria-hidden="true"></i><a href="https://github.com/james-bonifacio" class = "contact-link">jameslbonifacio</a> </div>
                 
             </div>
         </div>
 
         <footer class="container-fluid bg-4 text-center">
-          <p> Made by James Bonifacio, 2017</p>
+          <p> Made by James Bonifacio, 2019</p>
           <a href="#Top">Go to top</a>
 
         </footer>
